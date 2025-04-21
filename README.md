@@ -38,7 +38,7 @@ port: "/dev/ttyUSB0"
    Share the `arduino.avr.mega` folder so the network path becomes:  
    `\\192.168.1.100\firmware_share`
 
-3. **`username` / `password`**: Credentials to access the shared folder.
+3. **`username` / `password`**: Credentials of user who has access the shared folder. Double check if you have access to it by pasting \\{ip}\{folder_name} into File explorer from any device in local network.
 
 4. **`remote_file`**: Name of the firmware file (e.g., `firmware.hex`).  
    ➤ In Arduino IDE, use **Sketch → Export Compiled Binary**. This generates two `.hex` files:
