@@ -38,21 +38,22 @@ port: "/dev/ttyUSB0"
    Share the `arduino.avr.mega` folder so the network path becomes:  
    `\\192.168.1.100\firmware_share`
 
-3. **`username` / `password`**: Credentials of user who has access the shared folder. Double check if you have access to it by pasting \\{ip}\{folder_name} into File explorer from any device in local network.
+3. **`username` / `password`**: Credentials of user who has access the shared folder. Double check if you have access to it by pasting
+   `\\{ip}\{folder_name}` into File explorer from any device in local network.
 
-4. **`remote_file`**: Name of the firmware file (e.g., `firmware.hex`).  
+5. **`remote_file`**: Name of the firmware file (e.g., `firmware.hex`).  
    ➤ In Arduino IDE, use **Sketch → Export Compiled Binary**. This generates two `.hex` files:
    - `ha.ino.hex`
    - `ha.ino.with_bootloader.hex`
    Use the smaller one: `ha.ino.hex`.
 
-5. **`mcu`**: Microcontroller name (e.g., `atmega328p`, `atmega2560`).
+6. **`mcu`**: Microcontroller name (e.g., `atmega328p`, `atmega2560`).
 
-6. **`programmer`**: Upload protocol (e.g., `arduino`, `stk500`, `wiring`).
+7. **`programmer`**: Upload protocol (e.g., `arduino`, `stk500`, `wiring`).
 
-7. **`baud`**: Baud rate for upload (e.g., `57600`, `115200`).
+8. **`baud`**: Baud rate for upload (e.g., `57600`, `115200`).
 
-8. **`port`**: USB port the Arduino is connected to (e.g., `/dev/ttyUSB0`).
+9. **`port`**: USB port the Arduino is connected to (e.g., `/dev/ttyUSB0`).
 
 ---
 
