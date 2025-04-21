@@ -25,7 +25,7 @@ init: false
 
 options:
   pc_ip: "192.168.1.100"  # Example IP address or hostname of the PC
-  shared_folder_name: "firmware_share"  # Example shared folder name containing firmware
+  shared_folder_name: "arduino.avr.mega"  # Example shared folder name containing firmware
   username: "admin"  # Example username for accessing shared folder
   password: "examplepassword"  # Example password for accessing shared folder
   remote_file: "firmware.hex"  # Example firmware file to download
