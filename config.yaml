@@ -28,7 +28,7 @@ options:
   shared_folder_name: "arduino.avr.mega"  # Example shared folder name containing firmware
   username: "admin"  # Example username for accessing shared folder
   password: "examplepassword"  # Example password for accessing shared folder
-  remote_file: "firmware.hex"  # Example firmware file to download
+  remote_file: "firmware.ino.hex"  # Example firmware file to download
   mcu: "atmega2560"  # Example MCU for flashing (e.g., atmega328p, atmega2560)
   programmer: "wiring"  # Example programmer to use (e.g., stk500, wiring)
   baud: "115200"  # Example Baud rate for communication
