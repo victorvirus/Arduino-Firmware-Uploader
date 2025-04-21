@@ -1,0 +1,46 @@
+name: "Arduino Firmware Uploader"
+version: "1.0.0"
+slug: "arduino_firmware_uploader"
+description: "This addon for Home Assistant allows to upload new firmware to Arduino over local network."
+url: "https://github.com/victorvirus/Arduino-Firmware-Uploader"
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+
+devices:
+  - "/dev/ttyUSB0"
+  - "/dev/ttyACM0"
+
+privileged:
+  - "SYS_RAWIO"
+
+host_network: true
+
+startup: "once"
+boot: "manual"
+init: false
+
+options:
+  pc_ip: "192.168.1.100"  # Example IP address or hostname of the PC
+  shared_folder_name: "firmware_share"  # Example shared folder name containing firmware
+  username: "admin"  # Example username for accessing shared folder
+  password: "examplepassword"  # Example password for accessing shared folder
+  remote_file: "firmware.hex"  # Example firmware file to download
+  mcu: "atmega2560"  # Example MCU for flashing (e.g., atmega328p, atmega2560)
+  programmer: "wiring"  # Example programmer to use (e.g., stk500, wiring)
+  baud: "115200"  # Example Baud rate for communication
+  port: "/dev/ttyUSB0"  # Example Port for Arduino connection (e.g., /dev/ttyUSB1)
+
+schema:
+  pc_ip: "str"
+  shared_folder_name: "str"
+  username: "str"
+  password: "str"
+  remote_file: "str"
+  mcu: "str"
+  programmer: "str"
+  baud: "str"
+  port: "str"
